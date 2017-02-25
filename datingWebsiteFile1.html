@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+<--todo-->
+</style>
+</head>
+<body>
+<h1>Plese Enter Your Details For Our Dating Website</h1>
+<form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method = "post" enctype="multipart/form-data">
+<fieldset><legend>Your Face</legend>
+    Your image:<input type="file" name="yourimage" required><br>
+    Image preview:<img> 
+</fieldset>
+<fieldset><legend>Your General Details</legend>
+    Name:<input type = "text" required><br>
+    Gender:<input type = "radio">Male
+    <input type = "radio">Female<br>
+    Age:<input type = "number" required><br>
+    Date of birth:<input type = "date"><br>
+    Favorite color:<input type = "color"><br>
+    Which country:
+    <select>
+	    <option disabled selected value>no selection</option>
+        <option value="aruba">Aruba</option>
+        <option value="bermuda">Bermuda</option>
+        <option value="cambodia">Cambodia</option>
+        <option value="denmark">Denmark</option>
+        <option value="ecuador">Ecuador</option>
+    </select>
+</fieldset>
+<fieldset><legend>Your Indicators</legend>
+    Height: Short<input type="range" min="0" max="100">Tall</br>
+    Salary: Poor <input type="range" min="0" max="100">Rich
+</fieldset>
+<fieldset><legend>Your Contact Information</legend>
+Email:<input type="email" required></br>
+Mobile:<input type="tel"></br>
+Address:<textarea rows="4" cols="50"></textarea></br>
+Method to contact you: <input type="checkbox">Email <input type="checkbox">Whatsapp<input type="checkbox"> In-app chat
+</fieldset>
+    <input type="submit" value="Submit">
+	</form>
+</body>
+</html>
