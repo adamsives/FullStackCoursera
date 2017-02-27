@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<!--Adam Sives assignemnt for Coursera Full Stack Web Developement-->
+<!--adamsives@gmail.com-->
 <head>
 <style>
 <--todo-->
@@ -9,18 +11,19 @@
 <h1>Plese Enter Your Details For Our Dating Website</h1>
 <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" method = "post" enctype="multipart/form-data">
 <fieldset><legend>Your Face</legend>
-    Your image:<input type="file" name="yourimage" required><br>
-    Image preview:<img> 
+    <label for="avatar">Your image:</label><input type="file" name="yourimage" required><br>
+    <label for = "imagePreview">Image preview:</label><img type="file" id="avatar" name="avatar" required><img> 
 </fieldset>
 <fieldset><legend>Your General Details</legend>
-    Name:<input type = "text" required><br>
-    Gender:<input type = "radio">Male
-    <input type = "radio">Female<br>
-    Age:<input type = "number" required><br>
-    Date of birth:<input type = "date"><br>
-    Favorite color:<input type = "color"><br>
-    Which country:
-    <select>
+    <label for = "customerName">Name:</label><input type = "text" required><br>
+    <label for = "gender"> Gender:</label><input type = "radio">Male
+    <label for = "female"></label><input type = "radio">Female<br>
+    <label for = "age">Age:<input type = "number" required></label><br>
+    <label for = "dateOfBirth">Date of birth:<input type = "date"></label><br>
+    <label for = "favoriteColor">Favorite color:<input type = "color"></label><br>
+    <label for = "whichCountry">Which country:</label>
+    <label for = "countrySelect">
+	<select>
 	    <option disabled selected value>no selection</option>
         <option value="aruba">Aruba</option>
         <option value="bermuda">Bermuda</option>
@@ -28,10 +31,11 @@
         <option value="denmark">Denmark</option>
         <option value="ecuador">Ecuador</option>
     </select>
+	</label>
 </fieldset>
 <fieldset><legend>Your Indicators</legend>
-    Height: Short<input type="range" min="0" max="100">Tall</br>
-    Salary: Poor <input type="range" min="0" max="100">Rich
+    <label for = "height">Height: </label><label for = "short">Short</label><label for = "heightRange"><input type="range" min="0" max="100"><label for = "tall">Tall</label></br>
+    <label for = "slary">Salary: </label><label for = "poor">Poor</label><label for = "salaryRange"><input type="range" min="0" max="100"><label for = "rich">Rich</label></br>
 </fieldset>
 <fieldset><legend>Your Contact Information</legend>
 Email:<input type="email" required></br>
